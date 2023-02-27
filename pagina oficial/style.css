@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F3EFEF;
+  background-color: #F0F0F0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #161B33;
+  color: #F0F0F0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
@@ -59,19 +59,19 @@ section p {
 
 .boton {
   display: inline-block;
-  background-color: #95D5B2;
-  color: #fff;
+  background-color: #161B33;
+  color: #F0F0F0;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .boton:hover {
-  background-color: #FF6B6B;
+  background-color: #4CB5F5;
 }
 
 footer {
-  background-color: #eee;
+  background-color: #F0F0F0;
   color: #333;
   padding: 20px;
   text-align: center;
