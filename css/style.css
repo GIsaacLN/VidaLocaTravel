@@ -339,7 +339,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #ffffff;
+  color: #000000;
   margin-top: 75px;
   text-align: center;
   padding: 0 15px;
@@ -371,13 +371,13 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background: transparent;
+  background: #3182cb;
   color: #ffffff;
 }
 
 .slider_section .img-box {
-  background-image: url(../images/slider-bg.png);
-  background-position: bottom;
+/*  background-image: url(../images/slider-bg.png);
+*/  background-position: bottom;
   background-size: 100%;
   padding-bottom: 375px;
   position: relative;
@@ -425,6 +425,7 @@ a:focus {
   position: relative;
   z-index: 5;
 }
+
 
 .slider_section .img-box .play_btn img {
   width: 20px;
@@ -749,7 +750,7 @@ a:focus {
 }
 
 .about_section .btn-box a:hover {
-  background: transparent;
+  background:#3182cb;
   color: #ffffff;
 }
 
