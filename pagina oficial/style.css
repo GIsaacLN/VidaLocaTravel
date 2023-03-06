@@ -129,12 +129,6 @@ footer {
   justify-content: center;
 }
 
-.destination {
-  /* Estilos para cada destino aquí */
-  width: 25%;
-  margin: 0 1rem;
-}
-
 #nosotros .container{
   width: 50%;
   margin-left: 25%;
