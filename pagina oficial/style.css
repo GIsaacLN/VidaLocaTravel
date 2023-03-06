@@ -254,3 +254,43 @@ footer {
   background-color: #161B33;
   color: #F0F0F0;
 }
+
+/* Paginas Destino Info*/
+.destino-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.destino-info h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.destino-info p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.destino-info a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.destino-info a:hover {
+  background-color: #161B33;
+  color: #F0F0F0;
+}
