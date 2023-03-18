@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-        <a href="index.html"><img src="imagenes/logo_sinslogan_sinfondo.png"></a>
+        <a href="index.html"><img id="logo" src="imagenes/logo_sinslogan_sinfondo.png"></a>
         <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -33,25 +33,31 @@
             </div>
           </section>
           <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta, comentario o sugerencia? Nos encantaría saber de ti. Por favor, utiliza la siguiente información de contacto para ponerte en contacto con nosotros:</p>
-            
-            <ul>
-              <li><strong>Correo electrónico:</strong> <a href="mailto:viajes@vidalocatravel.com">viajes@vidalocatravel.com</a></li>
-              <li><strong>Teléfono:</strong> <a href="tel:+1234567890">+1234567890</a></li>
-              <li><strong>Dirección:</strong> 1234 Calle Principal, Ciudad, Estado, Código Postal</li>
-            </ul>
-            
-            <p>También puedes seguirnos en las redes sociales para obtener las últimas noticias y actualizaciones:</p>
-            
-            <ul>
-              <li><a href="https://www.facebook.com/tupagina">Facebook</a></li>
-              <li><a href="https://www.twitter.com/tucuenta">Twitter</a></li>
-              <li><a href="https://www.instagram.com/tucuenta">Instagram</a></li>
-            </ul>
-            
-            <p>¡Esperamos saber de ti pronto!</p>
-          </section>          
+            <div class="container">
+              <div style="display: flex; flex-direction: column;">
+                <p>Contáctanos para cualquier duda o pregunta acerca de nuestros servicios.</p>
+                <ul class="redes-sociales">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <ul class="informacion-contacto">
+                  <li><i class="fas fa-envelope"></i> contacto@vidalocatravel.com</li>
+                  <li><i class="fas fa-phone-alt"></i> +1 234 567 8901</li>
+                  <li><i class="fas fa-map-marker-alt"></i> 123 Calle Ejemplo, Ciudad Ejemplo</li>
+                </ul>
+              </div>
+              <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <input type="submit" value="Enviar mensaje">
+              </form>
+            </div>
+          </section>
         </main>
     <footer>
       <p>Agencia de viajes Vida Loca Travel &copy; 2023</p>

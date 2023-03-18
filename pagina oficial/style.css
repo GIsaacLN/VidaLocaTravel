@@ -5,6 +5,16 @@ body {
   background-color: #F0F0F0;
 }
 
+/*Cambia el estilo cuando la página es más chica*/
+@media (max-width: 1000px) {
+  header img {
+    width: 80%;
+  }
+  header li {
+    font-size: 80%;
+  }
+}
+
 header {
   background-color: #161B33;
   color: #F0F0F0;
@@ -178,41 +188,109 @@ footer {
 }
 
 #contacto {
-  background-color: #f9f9f9;
-  padding: 30px;
+  background-color: #f5f5f5;
+  padding: 50px 0;
 }
 
-#contacto h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+#contacto .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-#contacto p {
-  font-size: 18px;
-  margin-bottom: 10px;
+#contacto p{
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-#contacto ul {
+.redes-sociales {
   list-style: none;
-  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-#contacto li {
-  font-size: 18px;
-  margin-bottom: 10px;
+.redes-sociales li {
+  margin: 0 10px;
 }
 
-#contacto li strong {
-  font-weight: bold;
+.redes-sociales a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
-#contacto a {
-  color: #0077cc;
+.redes-sociales a:hover {
+  background-color: #666;
+}
+
+.informacion-contacto {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.informacion-contacto li {
+  margin: 10px 0;
+}
+
+.informacion-contacto i {
+  margin-right: 10px;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #161B33;
+  border: 1px solid #333;
+  padding: 12px 20px;
   text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-#contacto a:hover {
-  text-decoration: underline;
+input[type="submit"]:hover {
+  background-color: #161B33;
+  color: #F0F0F0;
 }
 
 
