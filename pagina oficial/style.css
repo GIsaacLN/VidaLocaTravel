@@ -378,8 +378,25 @@ input[type="submit"]:hover {
 }
 
 /* Paginas Destino Info*/
+.main-contenedor{
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .main-contenedor{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.destino-panoramica img{
+width: 100%;
+}
+
+
+
 .destino-info {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
@@ -433,34 +450,28 @@ input[type="submit"]:hover {
   background-color: #f5f5f5;
 }
 
-.galeria .imagenes {
+.galeria .carrusel {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
 }
-.galeria .imagenes img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 10px;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.galeria .imagenes .visible {
-  opacity: 1;
-}
-.galeria .botones {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.galeria .botones button {
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  margin: 0 5px;
-  cursor: pointer;
-  font-size: 16px;
+.galeria #imagen {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
 }
 
+.galeria .carrusel button {
+  border: none;
+}
+.galeria .carrusel button:hover {
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.galeria .carrusel i{
+  font-size: 20px;
+}
 /* Paginas Paquete Info*/
 .paquete-info {
   max-width: 800px;
