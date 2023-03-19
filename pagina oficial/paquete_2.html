@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tulum</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="imagenes/logo_sinslogan_sinfondo.png"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="paquete-info">
+            <h2>Paquete de aventura en Tulum</h2>
+            <p>Explora lo mejor de Tulum con nuestro paquete de aventura de 4 días y 3 noches. Te alojarás en una cabaña en la playa, con transporte desde y hacia el aeropuerto incluido. Además, disfrutarás de dos emocionantes excursiones: una en bicicleta por la zona arqueológica de Tulum y otra en kayak por la Laguna de Bacalar.</p>
+            <p>Descubre la belleza natural y la historia de esta región mientras te relajas en tu cabaña frente al mar. Nuestro equipo de servicio al cliente está disponible las 24 horas del día para ayudarte en lo que necesites.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V5WL0DkeugE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <div class="reserva">
+          <h2>Reserva ahora</h2>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <table>
+              <tr>
+                <td><label for="fecha-llegada">Fecha de llegada:</label></td>
+                <td><input type="date" id="fecha-llegada" name="fecha-llegada" required></td>
+                <td><label for="fecha-salida">Fecha de salida:</label></td>
+                <td><input type="date" id="fecha-salida" name="fecha-salida" required></td>
+              </tr>
+              <tr>
+                <td><label for="adultos">Adultos:</label></td>
+                <td><input type="number" id="adultos" name="adultos" min="1" max="10" required></td>
+                <td><label for="ninos">Niños:</label></td>
+                <td><input type="number" id="ninos" name="ninos" min="0" max="10"></td>
+              </tr>
+            </table>
+            <input type="submit" value="Reservar ahora">
+          </form>
+        </div>
+                
+        <h2 style="text-align: center;">Testimonios del destino</h2>
+        <div class="container">
+            <div class="testimonio">
+                <img src="imagenes/testimonio_2.jpg" alt="Testimonio 2">
+                <div class="descripcion">
+                  <p>"Mi viaje a Tulum fue una experiencia única en la vida. La agencia de viajes me ayudó a planificar todo y se aseguró de que todo saliera perfecto. ¡Recomiendo encarecidamente esta agencia de viajes!"</p>
+                  <h3>John Smith</h3>
+                  <span>New York, NY</span>
+                </div>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11408.560447840342!2d-88.39182019303112!3d18.676518746211848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5bb13e302c19f9%3A0x11cedc7f2bd0e608!2sBacalar%2C%20Q.R.!5e0!3m2!1ses!2smx!4v1679201379400!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+
+      </div>
+    </main>
+    <footer>
+      <p>Agencia de viajes Vida Loca Travel &copy; 2023</p>
+    </footer>
+  </body>
+</html>
