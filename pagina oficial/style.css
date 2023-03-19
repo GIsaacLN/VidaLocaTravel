@@ -417,6 +417,50 @@ input[type="submit"]:hover {
   color: #F0F0F0;
 }
 
+.destino-info .lugares table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.destino-info .lugares td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.destino-info .lugares tr:hover {
+  background-color: #f5f5f5;
+}
+
+.galeria .imagenes {
+  display: flex;
+  justify-content: center;
+}
+.galeria .imagenes img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.galeria .imagenes .visible {
+  opacity: 1;
+}
+.galeria .botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.galeria .botones button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 /* Paginas Paquete Info*/
 .paquete-info {
   max-width: 800px;
