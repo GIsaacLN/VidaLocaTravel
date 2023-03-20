@@ -83,10 +83,84 @@ section p {
 }
 
 footer {
-  background-color: #F0F0F0;
-  color: #333;
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.container-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-footer .row{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-footer .row .col1{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container-footer .col{
+  flex-grow: 1;
+}
+
+.container-footer .col1, .container-footer .col2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-footer .row .col2{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .container-footer .row .col1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+  }
+  }
+
+
+.container-footer .row .col3{
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  margin: 1rem;
+}
+
+.documentos li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.documentos a{
+  color: #ccc;
 }
 
 .container {
@@ -194,19 +268,23 @@ h3{
 
 /*Pagina Nosotros*/
 #nosotros .container{
-  width: 50%;
-  margin-left: 25%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
+}
+
+#nosotros .row .col{
+  text-align: center;
 }
 
 #nosotros {
   background-color: #F0F0F0;
-  padding: 2rem;
+  padding-top: 0;
 }
 
 #nosotros h2 {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 #nosotros p {
