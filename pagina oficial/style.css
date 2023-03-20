@@ -505,6 +505,7 @@ height: 200px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -525,7 +526,9 @@ height: 200px;
 }
 
 .reserva {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
