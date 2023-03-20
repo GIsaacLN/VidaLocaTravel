@@ -110,7 +110,7 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .container2 {
     display: flex;
     align-items: center;
@@ -121,6 +121,13 @@ footer {
 .panoramica img{
   width: 100%;
   height: auto;
+}
+
+h3{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0%;
+  text-align: center;
 }
 
 /*Pagina Inicial*/
@@ -272,8 +279,8 @@ h2 {
   margin-right: 10px;
 }
 
-form {
-  width: 600px;
+#contacto .container form {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -316,8 +323,6 @@ input[type="submit"]:hover {
   background-color: #161B33;
   color: #F0F0F0;
 }
-
-
 
 /* Pagina Testimonios */
 .testimonio {
@@ -415,6 +420,7 @@ input[type="submit"]:hover {
 
 .destino-panoramica img{
 width: 100%;
+height: 200px;
 }
 
 .destino-info {
@@ -456,19 +462,19 @@ width: 100%;
   color: #F0F0F0;
 }
 
-.destino-info .lugares table {
+.lugares table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.destino-info .lugares td {
+.lugares td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ccc;
 }
 
-.destino-info .lugares tr:hover {
+.lugares tr:hover {
   background-color: #f5f5f5;
 }
 
@@ -496,7 +502,7 @@ width: 100%;
 }
 /* Paginas Paquete Info*/
 .paquete-info {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
@@ -519,6 +525,7 @@ width: 100%;
 }
 
 .reserva {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

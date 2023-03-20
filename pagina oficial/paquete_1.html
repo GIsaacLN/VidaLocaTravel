@@ -4,6 +4,7 @@
     <title>Puerto Vallarta</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/b18a115cef.js" crossorigin="anonymous"></script>    
   </head>
   <body>
     <header>
@@ -19,56 +20,96 @@
       </nav>
     </header>
     <main>
-      <div class="paquete-info">
-        <h2>Paquete de playa en Puerto Vallarta</h2>
-        <p>Disfruta de unas vacaciones inolvidables en Puerto Vallarta, México. Con nuestro paquete de playa, tendrás acceso a todo lo que necesitas para unas vacaciones perfectas: desde alojamiento de lujo hasta transporte desde y hacia el aeropuerto, además de una emocionante excursión de buceo en la bahía de Banderas. Puerto Vallarta es conocido por sus impresionantes playas, la cultura local y la rica gastronomía. </p>
-        <p>Nuestro paquete de playa te da la libertad de explorar todo lo que Puerto Vallarta tiene para ofrecer sin preocuparte por los detalles. Ofrecemos alojamiento en el hotel Riu Vallarta, que cuenta con comodidades de primera clase, y te incluimos desayuno y cena buffet todos los días. Además, nuestro equipo de servicio al cliente está disponible las 24 horas del día para ayudarte en lo que necesites.</p>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IxeyrsAy5hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="reserva">
-          <h2>Reserva ahora</h2>
-          <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
+      <div class="main-contenedor">
+        <div class="paquete-info">
+          <h2>Paquete de playa en Puerto Vallarta</h2>
+          <p>Disfruta de unas vacaciones inolvidables en Puerto Vallarta, México. Con nuestro paquete de playa, tendrás acceso a todo lo que necesitas para unas vacaciones perfectas: desde alojamiento de lujo hasta transporte desde y hacia el aeropuerto, además de una emocionante excursión de buceo en la bahía de Banderas. Puerto Vallarta es conocido por sus impresionantes playas, la cultura local y la rica gastronomía. </p>
+          <p>Nuestro paquete de playa te da la libertad de explorar todo lo que Puerto Vallarta tiene para ofrecer sin preocuparte por los detalles. Ofrecemos alojamiento en el hotel Riu Vallarta, que cuenta con comodidades de primera clase, y te incluimos desayuno y cena buffet todos los días. Además, nuestro equipo de servicio al cliente está disponible las 24 horas del día para ayudarte en lo que necesites.</p>
+
+          <section class="lugares">
             <table>
-              <tr>
-                <td><label for="fecha-llegada">Fecha de llegada:</label></td>
-                <td><input type="date" id="fecha-llegada" name="fecha-llegada" required></td>
-                <td><label for="fecha-salida">Fecha de salida:</label></td>
-                <td><input type="date" id="fecha-salida" name="fecha-salida" required></td>
-              </tr>
-              <tr>
-                <td><label for="adultos">Adultos:</label></td>
-                <td><input type="number" id="adultos" name="adultos" min="1" max="10" required></td>
-                <td><label for="ninos">Niños:</label></td>
-                <td><input type="number" id="ninos" name="ninos" min="0" max="10"></td>
-              </tr>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-clock"></i></td>
+                        <td><strong>Duración</strong></td>
+                        <td>5 días y 4 noches</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-hotel"></i></td>
+                        <td><strong>Hotel</strong></td>
+                        <td>Hotel Riu Vallarta</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-plane"></i></td>
+                        <td><strong>Transporte</strong></td>
+                        <td>Transporte incluido desde y hacia el aeropuerto</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-person-biking"></i></td>
+                        <td><strong>Actividades</strong></td>
+                        <td>Excursión de buceo en la bahía de Banderas</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-bowl-food"></i></td>
+                        <td><strong>Comidas</strong></td>
+                        <td>Desayuno y cena buffet incluidos todos los días</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-dollar-sign"></i></td>
+                        <td><strong>Precio</strong></td>
+                        <td>$11,000 por persona</td>
+                    </tr>
+                </tbody>
             </table>
-            <input type="submit" value="Reservar ahora">
-          </form>
+          </section>        
+
+          <div class="reserva">
+            <h2>Reserva ahora</h2>
+            <form>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+              <table>
+                <tr>
+                  <td><label for="fecha-llegada">Fecha de llegada:</label></td>
+                  <td><input type="date" id="fecha-llegada" name="fecha-llegada" required></td>
+                  <td><label for="fecha-salida">Fecha de salida:</label></td>
+                  <td><input type="date" id="fecha-salida" name="fecha-salida" required></td>
+                </tr>
+                <tr>
+                  <td><label for="adultos">Adultos:</label></td>
+                  <td><input type="number" id="adultos" name="adultos" min="1" max="10" required></td>
+                  <td><label for="ninos">Niños:</label></td>
+                  <td><input type="number" id="ninos" name="ninos" min="0" max="10"></td>
+                </tr>
+              </table>
+              <input type="submit" value="Reservar ahora">
+            </form>
+          </div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/IxeyrsAy5hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
         </div>
-        
-        <h2 style="text-align: center;">Testimonios del destino</h2>
-        <div class="container">
-          <div class="testimonio">
-            <img src="imagenes/testimonio_1.jpg" alt="Testimonio 1">
-              <div class="descripcion">
-                <p>"Tuve una experiencia increíble en mi viaje a Puerto Vallarta con esta agencia de viajes. El hotel fue maravilloso y el personal fue muy amable y servicial. ¡Definitivamente volveré a reservar con ellos en mi próximo viaje!"</p>
-                <h3>Maria Gomez</h3>
-                <span>Los Angeles, CA</span>
-              </div>
+        <div class="contenedor-derecho">
+          <h3>Testimonio</h3>
+          <div class="container">
+            <div class="testimonio">
+              <img src="imagenes/testimonio_1.jpg" alt="Testimonio 1">
+                <div class="descripcion"> 
+                  <p>"Tuve una experiencia increíble en mi viaje a Puerto Vallarta con esta agencia de viajes. El hotel fue maravilloso y el personal fue muy amable y servicial. ¡Definitivamente volveré a reservar con ellos en mi próximo viaje!"</p>
+                  <h3>Maria Gomez</h3>
+                  <span>Los Angeles, CA</span>
+                </div>
+            </div>
+          </div>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14925.925138224176!2d-105.3120796!3d20.7312781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842146d538a0ed8f%3A0x5750e85f00bb0953!2sHotel%20Riu%20Vallarta!5e0!3m2!1ses!2smx!4v1678131356875!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14925.925138224176!2d-105.3120796!3d20.7312781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842146d538a0ed8f%3A0x5750e85f00bb0953!2sHotel%20Riu%20Vallarta!5e0!3m2!1ses!2smx!4v1678131356875!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
       </div>
     </main>
     <footer>
