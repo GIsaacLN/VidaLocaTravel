@@ -151,7 +151,7 @@ footer p {
   flex-direction: row;
 }
 
-.container2 {
+.container .container2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -166,7 +166,7 @@ footer p {
 }
 
 @media (max-width: 700px) {
-  .container2 {
+  .container .container2 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -197,9 +197,55 @@ h3{
 
 .destinos-ofertas section {
   text-align: center;
+  width: 50%;
   margin: 1rem;
   flex: 1 1 350px;
 }
+
+.container-index {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-index .destino {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px; 
+  height: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container-index .destino.visible {
+  display: flex;
+}
+
+.container-index .paquete {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px; 
+  height: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container-index .paquete.visible {
+  display: flex;
+}
+
 
 /*Pagina Destinos*/
 .destino {

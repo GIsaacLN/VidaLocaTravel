@@ -28,13 +28,127 @@
           <h2>Descubre nuevos destinos</h2>
           <p>Te ofrecemos una amplia variedad de destinos en todo el mundo.</p>
           <a href="destinos.html" class="boton">Ver destinos</a>
+          <div class="container-index">
+            <div class="destino visible">
+              <img src="imagenes/destino_1.jpg" alt="Destino 1">
+              <div class="descripcion">
+                <h3>Puerto Vallarta</h3>
+                <a href="destino_1.html">Ver más</a>
+              </div>
+            </div>
+            <div class="destino visible">
+              <img src="imagenes/destino_2.jpg" alt="Destino 2">
+              <div class="descripcion">
+                <h3>Tulum</h3>
+                <a href="destino_2.html">Ver más</a>
+              </div>
+            </div>
+            <div class="destino">
+              <img src="imagenes/destino_3.jpg" alt="Destino 3">
+              <div class="descripcion">
+                <h3>Mazatlán</h3>
+                <a href="destino_3.html">Ver más</a>
+              </div>
+            </div>
+            <div class="destino">
+              <img src="imagenes/destino_4.jpg" alt="Destino 4">
+              <div class="descripcion">
+                <h3>Sayulita</h3>
+                <a href="destino_4.html">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="row-destino">
+            <button class="prev-btn" aria-label="Anterior">&#10094;</button>
+            <button class="next-btn" aria-label="Siguiente">&#10095;</button>  
+          </div>
+
         </section>
         <section>
           <h2>Ofertas especiales</h2>
           <p>Aprovecha nuestras ofertas especiales y ahorra en tu próximo viaje.</p>
           <a href="paquetes.html" class="boton">Ver ofertas</a>
+          <div class="container-index">
+            <div class="paquete visible">
+              <img src="imagenes/vallarta_1.jpg" alt="Destino 1">
+              <div class="descripcion">
+                <h3>Playa en Puerto Vallarta</h3>
+                <a href="paquete_1.html">Ver más</a>
+              </div>
+            </div>
+            <div class="paquete visible">
+              <img src="imagenes/tulum_2.jpg" alt="Destino 2">
+              <div class="descripcion">
+                <h3>Aventura en Tulum</h3>
+                <a href="paquete_2.html">Ver más</a>
+              </div>
+            </div>
+            <div class="paquete">
+              <img src="imagenes/mazatlan_3.jpg" alt="Destino 3">
+              <div class="descripcion">
+                <h3>Cultura en Mazatlán</h3>
+                <a href="paquete_3.html">Ver más</a>
+              </div>
+            </div>
+            <div class="paquete">
+              <img src="imagenes/sayulita_1.jpg" alt="Destino 4">
+              <div class="descripcion">
+                <h3>Surfing en Sayulita</h3>
+                <a href="paquete_4.html">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="row-paquete">
+            <button class="prev-btn" aria-label="Anterior">&#10094;</button>
+            <button class="next-btn" aria-label="Siguiente">&#10095;</button>  
+          </div>
         </section>
       </div>
+      <script>
+        function initCarousel(carouselClass, itemClass, prevButtonClass, nextButtonClass) {
+          const container = document.querySelector(carouselClass);
+          let slidePosition = 0;
+          const slides = document.querySelectorAll(itemClass);
+          const totalSlides = slides.length;
+          
+          function moveToNextSlide() {
+            if (slidePosition +2 === totalSlides) {
+              slidePosition = 0;
+            } else {
+              slidePosition+=2;
+            }
+            updateSlidePosition();
+          }
+          
+          function moveToPrevSlide() {
+            if (slidePosition - 2 < 0) {
+              slidePosition = totalSlides - 2;
+            } else {
+              slidePosition -= 2;
+            }
+            updateSlidePosition();
+          }
+          
+          function updateSlidePosition() {
+            for (const slide of slides) {
+              slide.classList.remove('visible');
+              slide.classList.add('hidden');
+            }
+            slides[slidePosition].classList.add('visible');
+            if (slidePosition + 1 < totalSlides) {
+              slides[slidePosition + 1].classList.add('visible');
+            }
+          }
+          
+          document.querySelector(prevButtonClass).addEventListener('click', moveToPrevSlide);
+          document.querySelector(nextButtonClass).addEventListener('click', moveToNextSlide);
+  
+          setInterval(moveToNextSlide, 5000);
+        }
+  
+        initCarousel('.container-index', '.destino', '.row-destino .prev-btn', '.row-destino .next-btn');
+        initCarousel('.container-index', '.paquete', '.row-paquete .prev-btn', '.row-paquete .next-btn');
+      </script>  
     </main>
     <footer>
       <div class="container-footer">
